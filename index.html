@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html>
+           
+
+        
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+    </head>
+      
+     
+    
+	<body>
+        
+        <header id='header'> {{name}} </header>
+
+      
+        <div id="component_test">
+            <testcomponent> </testcomponent>
+        </div>
+        
+        <div id="component_test2">
+            <testcomponent> </testcomponent>
+        </div>
+        
+        <div id ="component_test3" v-bind:style="{backgroundColor:bgcolor}"> 
+            <m-top-bar></m-top-bar>
+        </div>
+        
+   
+         <div id='app'>
+            <p>{{ title }}</p>
+             <div v-html = "htmlcontent"> </div>
+             <img v-bind:src = "imgsrc" width="300" height="300">
+
+          </div>
+      
+        
+        
+          
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="/JS/main.js"></script>
+	</body>
+
+</html>
