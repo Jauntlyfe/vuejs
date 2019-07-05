@@ -13,3 +13,30 @@
    background-color: aqua;
     
 }
+
+
+navbar{
+    
+    display: flex;
+    background-color: blue;
+    height: 30px;
+    width: 100%;
+    
+    
+}
+
+#navbar-links li{
+    
+    color: white;
+    display: inline-flex;
+    background-color: red;
+    height: 600px;
+    width:  300px;
+}
+
+
+m-footer{
+    
+    background-color: greenyellow;
+    color: white;
+}

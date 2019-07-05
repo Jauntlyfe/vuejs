@@ -25,6 +25,9 @@
        
    });
 
+
+//Creating the compnents
+
  Vue.component('testcomponent',{
     
     template: '<div><h1> This is coming from component </h1> </div>'
@@ -38,15 +41,35 @@ Vue.component('m-top-bar', {
                 <a href="http://www.google.com"> <li> Home </li> </a>
                 <a href=""> <li> About </li> </a>
                 <li> Resources </li>
-            </ul>`,
-    data() {
-        
-        return {
-            bgcolor: 'red',
-            
-        }
-    },
+            </ul>`
+   
                 
+});
+
+Vue.component('navbar-header', {
+    template:`
+             
+                <ul id="navbar-links>
+                    <li> Home </li>
+                    <li> About </li>
+                </ul>`
+    
+});
+
+Vue.component('m-footer', {
+   template: `<div id=m-footer-id>
+                <p> This is the footer </p>
+                <p> This is the information bottom </p>
+
+                </div>` 
+    
+});
+
+//creating the id variables for the componets
+
+var m_footer = new Vue ({
+   el: '#m-footer' 
+    
 });
 
    var t1 = new Vue ({
@@ -62,9 +85,21 @@ Vue.component('m-top-bar', {
     });
 
    var header = new Vue ({
-        el: '#component_test3'
-    
+        el: '#component_test3',
+        data() {
+        
+        return {
+            bgcolor: 'red',
+            
+        }
+    },
+            
     });
 
 
+var navbar_header = new Vue ({
+   el: '#navbar_header' 
+    
+    
+});
 
